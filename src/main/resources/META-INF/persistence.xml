@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.trivadis.hibernate.hibernatetest" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.trivadis.hibernate.hibernatetest.Film</class>
+    <class>com.trivadis.hibernate.hibernatetest.Inventory</class>
+    <class>com.trivadis.hibernate.hibernatetest.Store</class>
+    <class>com.trivadis.hibernate.hibernatetest.Payment</class>
+    <class>com.trivadis.hibernate.hibernatetest.City</class>
+    <class>com.trivadis.hibernate.hibernatetest.Actor</class>
+    <class>com.trivadis.hibernate.hibernatetest.Country</class>
+    <class>com.trivadis.hibernate.hibernatetest.Address</class>
+    <class>com.trivadis.hibernate.hibernatetest.Customer</class>
+    <class>com.trivadis.hibernate.hibernatetest.Rental</class>
+    <class>com.trivadis.hibernate.hibernatetest.FilmText</class>
+    <class>com.trivadis.hibernate.hibernatetest.FilmActor</class>
+    <class>com.trivadis.hibernate.hibernatetest.Category</class>
+    <class>com.trivadis.hibernate.hibernatetest.Help</class>
+    <class>com.trivadis.hibernate.hibernatetest.Staff</class>
+    <class>com.trivadis.hibernate.hibernatetest.Language</class>
+    <class>com.trivadis.hibernate.hibernatetest.FilmCategory</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=ON)(ADDRESS_LIST= (ADDRESS=(PROTOCOL=TCP)(HOST=192.168.100.25)(PORT=1521)))(CONNECT_DATA= (SERVICE_NAME=PDB1SVC)))"/>
+      <property name="javax.persistence.jdbc.user" value="sakila"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="sakila"/>
+      <property name="hibernate.show_sql" value="false"/>
+    </properties>
+  </persistence-unit>
+</persistence>
